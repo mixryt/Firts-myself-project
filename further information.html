@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0,">
+    <title>Form</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js"></script>
+</head>
+
+<body>
+    <nav class="nav" id="anim">
+        <map name="silly">
+            <area shape="circle" coords="25,25,22" href="index.html" alt="inex" target="_blank">
+        </map>
+        <img usemap="#silly" class="logo" src="icons8-логотип-nl-100.png" alt="&&&">
+        <p><a href="index.html">HOME</a></p>
+        <ul>
+            <li><a href="#">item1</a></li>
+            <li><a href="#">item2</a></li>
+            <li><a href="#">item3</a></li>
+            <li><a href="#">item4</a></li>
+        </ul>
+        <div class="further">
+            <a href="further information.html">FORM</a>
+        </div>
+        <input type="text" placeholder="search...">
+
+
+    </nav>
+    <div class="boarder">
+        <div class="form1">
+            <form action="#" id="form" class="form_body">
+                <h1 class="form_title">Sending data by mail</h1>
+                <div class="form_item">
+                    <label for="formName" class="form_label">Name*</label>
+                    <input id="formName" type="text" class="form_input _req">
+                </div>
+                <div class="form_item">
+                    <label for="formEmail" class="form_Email">E-mail*</label>
+                    <input id="formEmail" type="Email" class="form_email _email form_input _req">
+                </div>
+                <div class="form_item">
+                    <div class="form_label">Right-handed or left-handed?</div>
+                    <div class="options">
+                        <div class="options_item">
+                            <input id="formRightHanded" checked type="radio" value="right" name="hand"
+                                class="options_input">
+                            <label for="formRightHanded" class="options_label">Right-handed</label>
+                        </div>
+                        <div class="options_item">
+                            <input id="formLeftHanded" type="radio" value="Left" name="hand" class="options_input">
+                            <label for="formLeftHanded" class="options_label">Left-handed</label>
+                        </div>
+                    </div>
+                </div>
+                <div class="form_input">
+                    <label for="formMessage" class="form_label">Message:</label>
+                    <textarea name="message" id="formMessage" class="form_input"></textarea>
+                </div>
+                <div class="form_item">
+                    <div class="form_label mg">Age:</div>
+                    <select name="age" class="select">
+                        <option value="18 to 25">Young</option>
+                        <option value="25 to 45">Old</option>
+                        <option value="from 45">Older</option>
+                    </select>
+                    <div class="form_item">
+                        <div class="form_label">Attach photo</div>
+                        <div class="file">
+                            <div class="file_item">
+                                <input id="formImage" accept=".jpg, .png,.gif" type="file" name="image"
+                                    class="file_input">
+                                <div class="file_button">Choose</div>
+                            </div>
+                            <div id="formPreview" class="file_preview"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="form_item">
+                    <div class="checkbox">
+                        <input id="formAgreement" checked type="checkbox" name="agreement" class="checkbox_input _req">
+                        <label for="formAgreement" class="checkbox_label"><span>I give my consent to the processing
+                                of
+                                personal data</span> <a href="">with the condition</a>*</label>
+                    </div>
+                </div>
+                <button type="submit" class="form_button">Send</button>
+            </form>
+        </div>
+    </div>
+</body>
+
+</html>
